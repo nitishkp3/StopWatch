@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100&family=Josefin+Sans&family=Jost:ital,wght@1,300&family=Mulish:wght@500&family=Poppins:wght@100;300;500&family=Raleway:wght@100;300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100&family=Josefin+Sans&family=Jost:ital,wght@1,300&family=Mulish:wght@500&family=Poppins:wght@100;300;500&family=Raleway:wght@100;300;400&family=Roboto&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ 
+    background-color: #dbe9ff;
+ 
+
+}
+.container{
+    background-color: #f0f9ff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: min(60%,28.25em);
+    padding: 3.75em 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 1.97em 3.75em rgba(1,87,185,0.2) ;    
+}
+.timer-display{
+    position: relative;
+    width: 110%;
+    left: -5%;
+    background-color: #3c98ff;
+    padding: 0.5em 0;
+    font-family: "Roboto Mono",monospace;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5em 1em rgba(1, 87, 185,0.2);
+}
+.buttons{
+    width: 80%;
+    margin: 3.8em auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.buttons button{
+    font-size: 1em;
+    background-color: #dbe9ff;
+    color: #3c98ff;
+    border: none;
+    font-family: "Poppins",sans-serif;
+    border-radius: 0.5em;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    outline: none;
+}
+#start-timer{
+    background-color: #3c98ff;
+    color: #f0f9ff;
+}
+
+@media (max-width:480px) {
+
+    .buttons button{
+    font-size: 15px; 
+    padding: 10px 10px;
+}
+    .timer-display{
+    padding: 0.5em 0;
+    font-size: 1.3rem; 
+}
+.buttons{
+    margin: 3em  auto 15px auto;
+}
+}
